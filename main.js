@@ -1,4 +1,6 @@
 
+var items = [4, 2, 6, 5, 3, 9];
+
 function swap(items, firstIndex, secondIndex){
     var temp = items[firstIndex];
     items[firstIndex] = items[secondIndex];
@@ -25,3 +27,6 @@ function quickSort(items, left, right) {
 
     return items;
 }
+
+var result = quickSort(items);
+console.log(result);
